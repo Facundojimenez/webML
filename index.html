@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Home</title>
+	<link rel="icon" href="imagenes/logo.png"> 
+	<meta name="description" content="Mariela Lawry es un sitio personal de una artista plástica. Se puede ver su biografia, sus obras, sus cursos y clases de acuarelas.">
+	<meta name="keywords" content="arte, pagina principal, mariela lawry, pintura, acuarelas, cursos, clases"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilo.css"> <!-- Estilo de SCSS -->
+</head>	
+<body>
+	<!-- HEADER con Bootstrap 4.5  -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#"><img class="logoNav" src="imagenes/logo.jpg" alt="Mariela lawry"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav ml-auto">
+			    	<li class="nav-item">
+			        	<a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+			    	</li>
+			     	<li class="nav-item">
+			        	<a class="nav-link" href="pages/sobre-nosotros.html">Sobre mi</a>
+			    	</li>
+			    	<li class="nav-item">
+			        	<a class="nav-link" href="pages/clases-cursos.html">Clases y cursos</a>
+			    	</li>
+			    	<li class="nav-item">
+			        	<a class="nav-link" href="pages/galeria.html" tabindex="-1" aria-disabled="true">Galería</a>
+			    	</li>
+			    	<li class="nav-item">
+			        	<a class="nav-link" href="pages/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+			    	</li>
+			    </ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!-- banner principal de bienvenida -->
+		<div class="bannerPrincipalContainer">
+			<h1>MARIELA LAWRY</h1>
+		</div>
+		<div class="anchoContenido marginVertical">
+			<h2>Bienvenido a mi página web</h2>
+			<p class="marginVertical">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis temporibus deleniti nulla magni perferendis odit, ratione error dolorem accusantium quibusdam minus, voluptatibus tenetur, libero est! Obcaecati, aliquam, officiis? Tempore saepe quos ea soluta ipsa labore molestias cupiditate. Molestias, laborum? Quam, ipsa! Magnam error voluptatum assumenda nobis corrupti alias dignissimos aliquid labore voluptates numquam nihil earum adipisci unde sapiente sunt odio, repellendus quas atque voluptatem mollitia. Voluptatem officiis possimus velit quidem quo impedit ad illum minima nulla excepturi similique hic, repudiandae dolorem voluptatibus tempora voluptas distinctio quaerat libero vel. Eligendi veritatis labore aut suscipit quas quaerat consequatur adipisci nulla mollitia, nisi dolore illum quod sequi, assumenda iusto alias, ipsa nobis quibusdam optio. Dolore officia, quo eos architecto dicta tempora eligendi qui illo, voluptatibus, reiciendis et, veniam sit itaque impedit fugit facilis. Quo ipsam laudantium atque consectetur consequuntur sint exercitationem, inventore earum nulla eveniet quia, nesciunt tempore nam minima in aspernatur.</p>
+		</div>
+		<!-- Banner de cursos con Botón-Modal -->
+		<div class="bannerCursosHome marginVertical">
+			<h3>Inscribite a los cursos!!</h3>
+			<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Detalles de los cursos</button>
+		</div>
+		<!-- Cards de Cursos con Bootstrap 4.5 -->
+		<div class="container-fluid anchoContenido marginVertical">
+			<div class="row">
+				<div class="card-deck my-5">
+					<div class="card">
+						<img src="imagenes/curso1.jpg" class="card-img-top" alt="curso-1">
+						<div class="card-body">
+					    	<h5 class="card-title">CURSO DE MARES Y FACHADAS</h5>
+					    	<p class="card-text">En abril comienzan NUEVOS CURSOS!!! Si te gusta pintar fachadas o mares  en acuarelas, estos cursos online en vivo son para vos!!!! Reserva tu lugar, las vacantes son limitadas.</p>
+					    </div>
+				  	</div>
+				  	<div class="card">
+						<img src="imagenes/curso2.jpg" class="card-img-top" alt="curso-1">
+						<div class="card-body">
+					    	<h5 class="card-title">CURSO ESPECIAL DE OLAS Y ESPUMA</h5>
+					    	<p class="card-text">En este curso aprenderás las distinas técnicas para pintar la espuma y las diversas paletas de colores que podés utilizar. Trabajaremos el oleaje desde distintos puntos de vista para que puedas hacer un aprendizaje en profundidad.</p>
+					    </div>
+				  	</div>
+					<div class="card">
+				    	<img src="imagenes/curso3.jpg" class="card-img-top" alt="curso-1">
+				    	<div class="card-body">
+					      	<h5 class="card-title">CURSO ESPECIAL DE FACHADAS</h5>
+					      	<p class="card-text">Me encanta pintar las fachadas de coloridas casas y de locales con aire románticos.<br>Si a vos tambien te gustan, es tu oportunidad de aprender a hacerlo!!! <br>Te propongo un taller online en vivo!!! Pintaremos junt@s y aprenderás las técnicas de acuarelas para realizar tus fachadas favoritas!</p>
+				    	</div>
+					</div>
+				</div>
+				<!--<button type="button" class="btn btn-dark btn-lg mx-auto"><a class="text-decoration-none text-reset" href="pages/clases-cursos.html">Ver más cursos...</a></button>-->
+				<a class="text-decoration-none text-reset  container-fluid d-flex" href="pages/clases-cursos.html">
+					<button type="button" class="btn btn-dark btn-lg mx-auto">Ver más cursos...</button>
+				</a>
+			</div>
+		</div>
+		<div class="bannerFondoLiso">
+			<h3>Te muestro algunas de mis obras...</h3>
+		</div>
+		<div class="galeriaHomeContainer anchoContenido marginVertical">
+			<div>
+				<img src="imagenes/galeria1.jpg" alt="acuarela-1">
+			</div>
+			<div>
+				<img src="imagenes/galeria2.jpg" alt="acuarela-2">
+			</div>
+			<div>
+				<img src="imagenes/galeria3.jpg" alt="acuarela-3">
+			</div>
+			<div>
+				<img src="imagenes/galeria4.jpg" alt="acuarela-4">
+			</div>
+			<div>
+				<img src="imagenes/galeria5.jpg" alt="acuarela-5">
+			</div>
+			<div>
+				<img src="imagenes/galeria6.jpg" alt="acuarela-6">
+			</div>
+			<div>
+				<img src="imagenes/galeria7.jpg" alt="acuarela-7">
+			</div>
+			<div>
+				<img src="imagenes/galeria8.jpg" alt="acuarela-8">
+			</div>
+			<div>
+				<img src="imagenes/galeria9.jpg" alt="acuarela-9">
+			</div>
+			<div>
+				<img src="imagenes/galeria10.jpg" alt="acuarela-10">
+			</div>
+		</div>
+		<a class="text-decoration-none text-reset container-fluid d-flex my-4" href="pages/galeria.html">
+			<button type="button" class="btn btn-dark btn-lg mx-auto">Ver más fotos...</button>
+		</a>
+		<div class="iconoSubirContainer">
+			<a href="#"><img src="imagenes/flecha.png" alt="flecha-arriba"></a>
+		</div>	
+	</main>
+	<!-- FOOTER -->
+	<footer>
+		<div class="contenedorFooter anchoContenido">
+			<h3>Seguime en mis redes</h3>
+			<ul class="redesFooter">
+				<li>
+					<a href="https://www.facebook.com/MarielaLawrynowicz" target="_blank">
+						<img src="imagenes/fb-logo.png" alt="logo facebook">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/marielalawry" target="_blank">
+						<img src="imagenes/ig-logo.png" alt="logo instagram">
+					</a>
+				</li>
+				<li>
+					<a href="https://ar.pinterest.com/marielalawry" target="_blank">
+						<img src="imagenes/pinterest-logo.png" alt="logo pinterest">
+					</a>
+				</li>
+			</ul>
+			<h4>Facundo Jimenez 2021 © Todos los derechos reservados</h4>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">Información de los cursos</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li>Las clases se realizarán de manera virtual a través de Google Meet</li>
+						<li>Los cursos tiene capacidad máxima de 15 personas</li>
+						<li>Para reservar el lugar se debe señar el 50% del valor del curso por adelantado.</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--	Scripts de bootstrap	-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
