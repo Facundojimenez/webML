@@ -122,6 +122,7 @@ li{
 	@extend .banner;
 	background-color: $colorPrincipal;
 	min-height: 40vh;
+	padding: 1rem 0;
 	h3{
 		font-size: 3em; 
 		padding: 1.5rem 0;
@@ -228,8 +229,8 @@ li{
 
 .galeriaContainer{
 	@extend .galeriaHomeContainer;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(12, 1fr);
 	img{
 		transition: all 500ms ease;
 		border: 2px solid #000000;
@@ -284,10 +285,6 @@ li{
 		width: 240px;
 		transition: all 500ms ease;
 		border-radius: 1em;
-		&:hover{
-			transform: scale(1.05);
-			box-shadow: 1px 1px 10px 1px #ffffff;
-		}
 	}
 }
 
@@ -488,9 +485,15 @@ footer{
 }
 
 .anchoContenido{
-	width: $anchoMaxContenido;
+	width: $anchoMaxContenidoMobile;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+@media only screen and (min-width: 770px){
+	.anchoContenido{
+		width: $anchoMaxContenidoDesktop;
+	}
 }
 
 .barraSeparadora{

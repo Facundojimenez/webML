@@ -114,6 +114,7 @@ li {
 .bannerFondoLiso {
   background-color: #d4a1b1;
   min-height: 40vh;
+  padding: 1rem 0;
 }
 
 .bannerFondoLiso h3 {
@@ -228,8 +229,8 @@ li {
 }
 
 .galeriaContainer {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .galeriaContainer img {
@@ -287,11 +288,6 @@ li {
   width: 240px;
   transition: all 500ms ease;
   border-radius: 1em;
-}
-
-.cursoContenido img:hover {
-  transform: scale(1.05);
-  box-shadow: 1px 1px 10px 1px #ffffff;
 }
 
 @media only screen and (min-width: 770px) {
@@ -490,9 +486,15 @@ footer h4 {
 }
 
 .anchoContenido {
-  width: 70%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media only screen and (min-width: 770px) {
+  .anchoContenido {
+    width: 70%;
+  }
 }
 
 .barraSeparadora {
