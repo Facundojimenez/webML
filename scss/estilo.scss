@@ -262,7 +262,7 @@ li{
 
 .cursoContainer{
 	padding: 1em;
-	margin: 1em 0;
+	margin: 2rem 0;
 	border: 2px solid #000000;
 	background-color: rgba(40,40,40,0.15);
 	transition: all 500ms ease;
@@ -271,6 +271,13 @@ li{
 		background-color: $colorPrincipal;
 		box-shadow: 5px 3px 10px 1px $colorSombraCajas;
 	}
+}
+
+@media only screen and(min-width: 770px){
+	.cursoContainer{
+		margin: 1rem;
+	}
+
 }
 
 .cursoContenido{
