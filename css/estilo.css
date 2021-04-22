@@ -427,6 +427,11 @@ textarea {
   }
 }
 
+/* NUEVO FORM DE CONTACTO */
+.contactoContainer2 {
+  background-color: #d4a1b1;
+}
+
 /* Estilo del footer*/
 footer {
   padding-top: 1em;

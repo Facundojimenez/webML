@@ -62,6 +62,8 @@
 
 
 		<!-- Info y formulario de contacto-->
+
+		<!-- 
 		<div class="contactoContainer marginVertical anchoContenido">
 			<div class="contactoInfoContainer">
 				<h3>Podes contactarme a través de:</h3>
@@ -71,7 +73,7 @@
 					<li>Local: Calle falsa 123, Ciudad X.</li>
 				</ul>
 			</div>
-			<div class="contactoFormContainer">
+			<div class="container-fluid contactoFormContainer">
 				<h3>Enviame un mensaje</h3>
 				<form class="contactoForm" action="contacto.html" method="GET">
 					<label for="nombre">Nombre</label>
@@ -81,6 +83,36 @@
 					<label for="mensaje">Mensaje</label>
 					<textarea name="mensaje" id="mensaje-form" placeholder="Escriba su mensaje" class="bordeInput"></textarea>
 					<input type="submit" name="enviar" value="Enviar">
+				</form>
+			</div>
+		</div>
+		-->
+
+		<div class="container-fluid anchoContenido contactoContainer2 rounded p-3 my-3 ">
+			<div class="row">
+				<div class="col contactoFormImagen">
+					<img src="../imagenes/mensaje.jpg" alt="mensaje">
+				</div>
+				<form class="col">
+				  <h3>Enviame un mensaje</h3>
+				  <div class="form-group">
+				    <label for="inputPrimerNombre">Nombre</label>
+				    <input type="text" class="form-control rounded-pill" id="inputPrimerNombre" aria-describedby="nombre">
+				  </div>
+				   <div class="form-group">
+				    <label for="inputPrimerNombre">Apellido</label>
+				    <input type="text" class="form-control rounded-pill" id="inputApellido" aria-describedby="apellido">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email</label>
+				    <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp">
+				    <small id="emailHelp" class="form-text text-muted">No compartiremos con nadie tu email</small>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlTextarea1">Email</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-dark btn-block rounded-pill">Submit</button>
 				</form>
 			</div>
 		</div>
