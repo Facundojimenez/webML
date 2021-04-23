@@ -1,7 +1,7 @@
 /* GENERALES */
 $anchoMax: 100%;
 $anchoMaxContenidoDesktop: 70%;
-$anchoMaxContenidoMobile: 80%;
+$anchoMaxContenidoMobile: 90%;
 $alturaBannerSecundario: 40vh;
 
 /* COLORES */
@@ -21,3 +21,10 @@ $fuenteTitulo: 'Raleway', sans-serif;
 $fuenteGeneral: 'Lato', sans-serif;
 $interlineadoParrafo: 1.5;
 $espaciadoPalabrasParrafo: 2px;
+
+/* TAMAÑO DE DISPOSITIVOS */
+
+$tamanio-min-sm: 576px;
+$tamanio-min-md: 768px;
+$tamanio-min-lg: 992px;
+$tamanio-min-xl: 1200px;

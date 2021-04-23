@@ -59,28 +59,31 @@
 				<div><img src="../svg/pinterest-logo.svg" alt="pinterest logo"></div>
 			</a>
 		</div>
-
-
-		<!-- Info y formulario de contacto-->
-		<div class="contactoContainer marginVertical anchoContenido">
-			<div class="contactoInfoContainer">
-				<h3>Podes contactarme a través de:</h3>
-				<ul>
-					<li>Telefono: 1234-5678</li>
-					<li>Email: contacto@gmail.com</li>
-					<li>Local: Calle falsa 123, Ciudad X.</li>
-				</ul>
-			</div>
-			<div class="contactoFormContainer">
-				<h3>Enviame un mensaje</h3>
-				<form class="contactoForm" action="contacto.html" method="GET">
-					<label for="nombre">Nombre</label>
-					<input type="text" placeholder="Ingrese su nombre" name="nombre" class="bordeInput">
-					<label for="email">Email</label>
-					<input type="email"placeholder="Ingrese su email" name="email" class="bordeInput">
-					<label for="mensaje">Mensaje</label>
-					<textarea name="mensaje" id="mensaje-form" placeholder="Escriba su mensaje" class="bordeInput"></textarea>
-					<input type="submit" name="enviar" value="Enviar">
+		<div class="container-fluid anchoContenido contactoContainer rounded p-3 my-3 ">
+			<div class="row">
+				<div class="col-12 col-md-6 d-flex justify-content-center mb-1 contactoFormImagenContainer">
+					<img src="../svg/mensaje.svg" alt="mensaje">
+				</div>
+				<form class="col-12 col-md-6">
+				<h3 class="text-center">Enviame un mensaje</h3>
+					<div class="form-group">
+					    <label for="inputPrimerNombre">Nombre</label>
+					    <input type="text" class="form-control rounded-pill" id="inputPrimerNombre" aria-describedby="nombre">
+					</div>
+					<div class="form-group">
+					    <label for="inputApellido">Apellido</label>
+					    <input type="text" class="form-control rounded-pill" id="inputApellido" aria-describedby="apellido">
+					</div>
+					<div class="form-group">
+					    <label for="inputEmail">Email</label>
+					    <input type="email" class="form-control rounded-pill" id="inputEmail" aria-describedby="email">
+					    <small id="emailHelp" class="form-text text-muted">No compartiremos con nadie tu email</small>
+					</div>
+					<div class="form-group">
+				   		<label for="inputMensaje">Mensaje</label>
+				    	<textarea class="form-control" id="inputMensaje" rows="5"></textarea>
+					</div>
+				<button type="submit" class="btn btn-dark btn-block rounded-pill">Submit</button>
 				</form>
 			</div>
 		</div>
