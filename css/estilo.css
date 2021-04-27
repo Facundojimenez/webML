@@ -381,6 +381,10 @@ li {
   .contactoContainer .contactoFormImagenContainer img {
     width: 300px;
   }
+  .contactoContainer h3 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
 }
 
 /* Estilo del footer*/
