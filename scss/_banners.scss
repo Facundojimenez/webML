@@ -1,0 +1,93 @@
+
+/* Estilo de los banners*/
+
+
+.banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-size: cover;
+	text-align: center;
+	padding: 1em;
+}
+
+.bannerPrincipalContainer,
+.bannerCursosHome{
+	background-attachment: fixed;
+}
+
+.bannerPrincipalContainer{
+	@extend .banner;
+	min-height: 90vh;
+	background-image: url("../imagenes/banner4.jpeg");
+	h1{
+		color: #ffffff;
+		font-size: 2.3em;
+		letter-spacing: 0.7em;
+		font-weight: 500;
+	}
+}
+
+@mixin bannerSecundario($url-foto){
+	background-image: url($url-foto);
+	color: #ffffff;
+	background-position: center;
+	min-height: 40vh;
+}
+
+.bannerCursosHome{
+	@extend .banner;
+	@include bannerSecundario("../imagenes/banner2.jpg");
+	h3{
+		font-size: 3.5em;
+	}
+}
+.bannerIrAGaleriaHome{
+	@extend .banner;
+	background-color: $colorPrincipal;
+	min-height: 40vh;
+}
+
+.bannerFondoLiso{
+	@extend .banner;
+	background-color: $colorPrincipal;
+	min-height: 40vh;
+	padding: 1rem;
+	h3{
+		font-size: 3em; 
+		padding: 1.5rem 0;
+	}
+}
+
+.bannerCursos{
+	@extend .banner;
+	@include bannerSecundario("../imagenes/bannerCursos2.jpg");
+}
+
+.bannerContacto{
+	@extend .banner;
+	@include bannerSecundario("../imagenes/bannerContacto.jpg");
+}
+
+@media only screen and (max-width: $tamanio-min-md - 1){
+	.bannerContacto{
+		h3{
+			font-size: 1.5rem;
+		}
+		h4{
+			font-size: 1rem;
+		}
+	}
+}
+
+
+.bannerAboutMe{
+	@extend .banner;
+	@include bannerSecundario("../imagenes/bannerAboutMe2.jpg");
+}
+
+.bannerGaleria{
+	@extend .banner;
+	@include bannerSecundario("../imagenes/bannerGaleria6.jpg");
+}

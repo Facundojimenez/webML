@@ -1,0 +1,50 @@
+/*Estilo de curso*/
+
+.cursoContainer{
+	padding: 1em;
+	margin: 2rem 0;
+	border: 2px solid #000000;
+	background-color: rgba(40,40,40,0.15);
+	transition: all 500ms ease;
+	border-radius: 5px;
+	&:hover{
+		transform: scale(1.05);
+		background-color: $colorPrincipal;
+		box-shadow: 5px 3px 10px 1px $colorSombraCajas;
+	}
+}
+
+@media only screen and(min-width: 770px){
+	.cursoContainer{
+		margin: 1rem;
+	}
+
+}
+
+.cursoContenido{
+	margin-top: 0.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	p{
+		padding-bottom: 1em;
+	}
+	img{
+		width: 240px;
+		transition: all 500ms ease;
+		border-radius: 1em;
+	}
+}
+
+@media only screen and (min-width: 770px){
+	.cursoContenido{
+		flex-direction: row;
+	}
+	.cursoContenido p{
+		padding: 0;
+		padding-right: 1em;
+	}
+	.cursoContenido img{
+		width: 180px;
+	}
+}

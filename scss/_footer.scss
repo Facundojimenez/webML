@@ -1,0 +1,49 @@
+/* Estilo del footer*/
+
+footer{
+	padding-top: 1em;
+	padding-bottom: 0.2em;
+	border-top: 0.1em solid #333333;
+	background-color: $colorFooter;
+	h3{
+		color: $colorFuenteFooter;
+		margin-bottom: 0.5em;
+		text-align: center;
+	}
+	h4{
+		text-align: center;
+		color: $colorFuenteFooter;
+		font-size: 1em;
+		font-weight: 300;
+	}
+}
+
+@media only screen and (min-width: $tamanio-min-md){
+	footer{
+		h3{
+			text-align: left;
+		}
+	}
+}
+
+/*redes sociales del footer*/
+
+.contenedorFooter{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 20vh;
+}
+
+.redesFooter{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5em;
+	li{
+		padding: 0 1.5em;
+	}
+	img{
+		width: 2.5em;
+		margin-right: 0.5em 
+	}
+}

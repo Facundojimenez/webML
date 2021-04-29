@@ -1,0 +1,39 @@
+/* otras propiedades*/
+
+.marginVertical{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.anchoContenido{
+	width: $anchoMaxContenidoMobile;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media only screen and (min-width: 770px){
+	.anchoContenido{
+		width: $anchoMaxContenidoDesktop;
+	}
+}
+
+.barraSeparadora{
+	border-top: 1px solid #aaaaaa;
+	margin: 1.5rem 0;
+}
+
+/*icono Flecha para subir hacia arriba*/
+
+.iconoSubirContainer{
+	background-color: $colorPrincipal;
+	position: fixed;
+	right: 1%;
+	bottom: 5%;
+	border: 2px solid #000000;
+	box-shadow: 2px 2px 6px 1px $colorSombraCajas;
+	img{
+		height: 3em;
+		width: 3em;
+	}
+}
+
