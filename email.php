@@ -36,8 +36,8 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Consulta de: '.$_POST['inp_nombre'];
-    $mail->Body    = 'Nombre: '.$_POST['inp_nombre'].'<br>Apellido: '.$_POST['inp_apellido'].'<br>Mensaje: '.$_POST['inp_mensaje'].'<br>Email: '.$_POST['inp_email'];
+    $mail->Subject = 'Consulta de: '.$_POST['input_nombre'];
+    $mail->Body    = 'Nombre: '.$_POST['input_nombre'].'<br>Apellido: '.$_POST['input_apellido'].'<br>Mensaje: '.$_POST['input_mensaje'].'<br>Email: '.$_POST['input_email'];
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
