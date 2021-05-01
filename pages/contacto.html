@@ -64,24 +64,24 @@
 				<div class="col-12 col-md-6 d-flex justify-content-center mb-1 contactoFormImagenContainer">
 					<img src="../svg/mensaje.svg" alt="mensaje">
 				</div>
-				<form class="col-12 col-md-6">
+				<form class="col-12 col-md-6 needs-validation" method="POST" action="../email.php" novalidate>
 				<h3 class="text-center">Enviame un mensaje</h3>
 					<div class="form-group">
 					    <label for="inputPrimerNombre">Nombre</label>
-					    <input type="text" class="form-control rounded-pill" id="inputPrimerNombre" aria-describedby="nombre">
+					    <input type="text" class="form-control rounded-pill" id="inputPrimerNombre" name="input_nombre" value="" autocomplete="off" required>
 					</div>
 					<div class="form-group">
 					    <label for="inputApellido">Apellido</label>
-					    <input type="text" class="form-control rounded-pill" id="inputApellido" aria-describedby="apellido">
+					    <input type="text" class="form-control rounded-pill" id="inputApellido" name="input_apellido" value="" autocomplete="off" required>
 					</div>
 					<div class="form-group">
 					    <label for="inputEmail">Email</label>
-					    <input type="email" class="form-control rounded-pill" id="inputEmail" aria-describedby="email">
+					    <input type="email" class="form-control rounded-pill" id="inputEmail" name="input_email" value="" autocomplete="off" required>
 					    <small id="emailHelp" class="form-text text-muted">No compartiremos con nadie tu email</small>
 					</div>
 					<div class="form-group">
 				   		<label for="inputMensaje">Mensaje</label>
-				    	<textarea class="form-control" id="inputMensaje" rows="5"></textarea>
+				    	<textarea class="form-control" id="inputMensaje" rows="5" name="input_mensaje"></textarea>
 					</div>
 				<button type="submit" class="btn btn-dark btn-block rounded-pill">Enviar</button>
 				</form>

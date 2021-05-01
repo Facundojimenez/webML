@@ -31,3 +31,5 @@ logs
 
 *.zip
 *.sql
+
+/vendor
