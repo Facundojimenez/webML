@@ -41,10 +41,10 @@ try {
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    header("location: gracias.html");
+    header("location: pages/gracias.html");
 } catch (Exception $e) {
     //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    header("location: error.html");
+    header("location: pages/error.html");
 }
 
 ?>
