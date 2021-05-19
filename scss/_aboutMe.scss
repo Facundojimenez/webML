@@ -40,3 +40,17 @@
 		width: 350px;
 	}	
 }
+
+/* mini biografia del index.html*/
+
+.miniBio{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	p{
+		font-size: 1.3em;
+	}
+}

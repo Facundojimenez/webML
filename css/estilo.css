@@ -93,7 +93,7 @@ li {
 }
 
 .bannerPrincipalContainer {
-  min-height: 90vh;
+  min-height: 92vh;
   background-image: url("../imagenes/banner4.jpeg");
 }
 
@@ -381,6 +381,20 @@ footer h4 {
   }
 }
 
+/* mini biografia del index.html*/
+.miniBio {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.miniBio p {
+  font-size: 1.3em;
+}
+
 /* Estilo de las redes sociales de la seccion de Contacto*/
 .redesContacto {
   display: flex;
@@ -453,11 +467,6 @@ footer h4 {
   .anchoContenido {
     width: 70%;
   }
-}
-
-.barraSeparadora {
-  border-top: 1px solid #aaaaaa;
-  margin: 1.5rem 0;
 }
 
 /*icono Flecha para subir hacia arriba*/
